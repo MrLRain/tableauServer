@@ -1,0 +1,206 @@
+2018-12-28 15:59:06.488 (20732): pid=24800----------------------------------
+2018-12-28 15:59:06.517 (20732): CreateFile( "D:\tde\TableAuFile2018-12-28testTableau.tde" access=c0000000 share=1 create=4 flags=8000080 ): 系统找不到指定的路径。
+2018-12-28 16:02:03.347 (7908): pid=24800----------------------------------
+2018-12-28 16:02:03.347 (7908): Creating a connection to tde server
+2018-12-28 16:02:03.347 (7908): Starting new server instance
+2018-12-28 16:02:03.348 (7908): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:02:03.348 (7908): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:02:03.866 (7908): Opening connection to tab.pipe://./pipe/{EB6E8AC3-23D4-4A4B-9990-3DB233298F83}
+2018-12-28 16:02:03.866 (7908): Creating new connection: tab.pipe://./pipe/{EB6E8AC3-23D4-4A4B-9990-3DB233298F83}
+2018-12-28 16:02:03.870 (7908): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:02:19.974 (7908): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:02:20.139 (7908): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:02:20.200 (7908): Dropping connection
+2018-12-28 16:02:20.200 (7908): Closing server at: tab.pipe://./pipe/{EB6E8AC3-23D4-4A4B-9990-3DB233298F83}
+2018-12-28 16:08:59.401 (2716): pid=24800----------------------------------
+2018-12-28 16:08:59.401 (2716): Creating a connection to tde server
+2018-12-28 16:08:59.401 (2716): Starting new server instance
+2018-12-28 16:08:59.435 (2716): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:08:59.435 (2716): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:08:59.982 (2716): Opening connection to tab.pipe://./pipe/{566C9B00-9200-42BB-8964-303FA14E4195}
+2018-12-28 16:08:59.982 (2716): Creating new connection: tab.pipe://./pipe/{566C9B00-9200-42BB-8964-303FA14E4195}
+2018-12-28 16:08:59.984 (2716): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:09:05.547 (2716): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:09:05.678 (2716): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:09:05.726 (2716): Dropping connection
+2018-12-28 16:09:05.726 (2716): Closing server at: tab.pipe://./pipe/{566C9B00-9200-42BB-8964-303FA14E4195}
+2018-12-28 16:15:34.947 (7908): pid=24800----------------------------------
+2018-12-28 16:15:34.947 (7908): Creating a connection to tde server
+2018-12-28 16:15:34.947 (7908): Starting new server instance
+2018-12-28 16:15:34.948 (7908): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:15:34.948 (7908): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:15:35.339 (7908): Opening connection to tab.pipe://./pipe/{F8F5598C-0752-47E1-A521-7F14147927D4}
+2018-12-28 16:15:35.339 (7908): Creating new connection: tab.pipe://./pipe/{F8F5598C-0752-47E1-A521-7F14147927D4}
+2018-12-28 16:15:35.348 (7908): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:15:37.805 (7908): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:15:37.944 (7908): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:15:38.000 (7908): Dropping connection
+2018-12-28 16:15:38.000 (7908): Closing server at: tab.pipe://./pipe/{F8F5598C-0752-47E1-A521-7F14147927D4}
+2018-12-28 16:18:06.198 (2716): pid=24800----------------------------------
+2018-12-28 16:18:07.709 (2716): Creating a connection to tde server
+2018-12-28 16:18:07.709 (2716): Starting new server instance
+2018-12-28 16:18:07.710 (2716): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:18:07.710 (2716): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:18:08.187 (2716): Opening connection to tab.pipe://./pipe/{828F40B1-2240-4DFD-99B4-315BAF6CDB6D}
+2018-12-28 16:18:08.187 (2716): Creating new connection: tab.pipe://./pipe/{828F40B1-2240-4DFD-99B4-315BAF6CDB6D}
+2018-12-28 16:18:08.197 (2716): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:18:31.089 (2716): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:18:31.180 (2716): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:18:31.228 (2716): Dropping connection
+2018-12-28 16:18:31.228 (2716): Closing server at: tab.pipe://./pipe/{828F40B1-2240-4DFD-99B4-315BAF6CDB6D}
+2018-12-28 16:21:46.899 (14576): pid=24800----------------------------------
+2018-12-28 16:22:32.831 (14576): Creating a connection to tde server
+2018-12-28 16:22:32.831 (14576): Starting new server instance
+2018-12-28 16:22:32.833 (14576): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:22:32.833 (14576): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:22:33.381 (14576): Opening connection to tab.pipe://./pipe/{52C085DD-FF8A-4376-84E5-6EB075BC2C3D}
+2018-12-28 16:22:33.381 (14576): Creating new connection: tab.pipe://./pipe/{52C085DD-FF8A-4376-84E5-6EB075BC2C3D}
+2018-12-28 16:22:33.382 (14576): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:22:35.726 (14576): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:22:35.965 (14576): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:22:36.144 (14576): Dropping connection
+2018-12-28 16:22:36.144 (14576): Closing server at: tab.pipe://./pipe/{52C085DD-FF8A-4376-84E5-6EB075BC2C3D}
+2018-12-28 16:34:19.402 (25000): pid=24800----------------------------------
+2018-12-28 16:34:21.214 (25000): Creating a connection to tde server
+2018-12-28 16:34:21.214 (25000): Starting new server instance
+2018-12-28 16:34:21.215 (25000): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:34:21.215 (25000): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:34:21.710 (25000): Opening connection to tab.pipe://./pipe/{84B18CE0-85B7-465F-8172-8E0BF2CC25BA}
+2018-12-28 16:34:21.710 (25000): Creating new connection: tab.pipe://./pipe/{84B18CE0-85B7-465F-8172-8E0BF2CC25BA}
+2018-12-28 16:34:21.716 (25000): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:40:14.433 (25000): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:40:14.760 (25000): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:40:14.897 (25000): Dropping connection
+2018-12-28 16:40:14.897 (25000): Closing server at: tab.pipe://./pipe/{84B18CE0-85B7-465F-8172-8E0BF2CC25BA}
+2018-12-28 16:46:10.769 (27896): pid=12112----------------------------------
+2018-12-28 16:46:10.781 (27896): Creating a connection to tde server
+2018-12-28 16:46:10.781 (27896): Starting new server instance
+2018-12-28 16:46:10.782 (27896): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:46:10.782 (27896): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:46:12.940 (27896): Opening connection to tab.pipe://./pipe/{32C077DC-8E63-4AE3-9C9D-1183F23659F5}
+2018-12-28 16:46:12.940 (27896): Creating new connection: tab.pipe://./pipe/{32C077DC-8E63-4AE3-9C9D-1183F23659F5}
+2018-12-28 16:46:12.941 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:46:15.699 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:46:15.896 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:46:16.053 (27896): Dropping connection
+2018-12-28 16:46:16.053 (27896): Closing server at: tab.pipe://./pipe/{32C077DC-8E63-4AE3-9C9D-1183F23659F5}
+2018-12-28 16:52:58.132 (27580): pid=12112----------------------------------
+2018-12-28 16:52:58.133 (27580): Creating a connection to tde server
+2018-12-28 16:52:58.136 (27580): Starting new server instance
+2018-12-28 16:52:58.143 (27580): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:52:58.143 (27580): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:52:58.502 (27580): Opening connection to tab.pipe://./pipe/{5ACD0123-F762-4662-B475-95EE26D86155}
+2018-12-28 16:52:58.502 (27580): Creating new connection: tab.pipe://./pipe/{5ACD0123-F762-4662-B475-95EE26D86155}
+2018-12-28 16:52:58.504 (27580): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:52:59.209 (27580): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:52:59.722 (27580): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:52:59.882 (27580): Dropping connection
+2018-12-28 16:52:59.882 (27580): Closing server at: tab.pipe://./pipe/{5ACD0123-F762-4662-B475-95EE26D86155}
+2018-12-28 16:59:06.778 (25720): pid=12112----------------------------------
+2018-12-28 16:59:06.778 (25720): Creating a connection to tde server
+2018-12-28 16:59:06.778 (25720): Starting new server instance
+2018-12-28 16:59:06.780 (25720): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 16:59:06.780 (25720): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 16:59:06.950 (25720): Opening connection to tab.pipe://./pipe/{58A0840B-B965-40A1-90E5-0A274B14312A}
+2018-12-28 16:59:06.950 (25720): Creating new connection: tab.pipe://./pipe/{58A0840B-B965-40A1-90E5-0A274B14312A}
+2018-12-28 16:59:06.950 (25720): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:59:07.335 (25720): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:59:07.565 (25720): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 16:59:07.683 (25720): Dropping connection
+2018-12-28 16:59:07.683 (25720): Closing server at: tab.pipe://./pipe/{58A0840B-B965-40A1-90E5-0A274B14312A}
+2018-12-28 17:04:40.350 (27580): pid=12112----------------------------------
+2018-12-28 17:04:40.350 (27580): Creating a connection to tde server
+2018-12-28 17:04:40.351 (27580): Starting new server instance
+2018-12-28 17:04:40.352 (27580): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:04:40.352 (27580): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:04:40.771 (27580): Opening connection to tab.pipe://./pipe/{81E11789-3FDC-45EB-8F2C-80BD74F27390}
+2018-12-28 17:04:40.771 (27580): Creating new connection: tab.pipe://./pipe/{81E11789-3FDC-45EB-8F2C-80BD74F27390}
+2018-12-28 17:04:40.774 (27580): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:04:41.226 (27580): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:04:41.508 (27580): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:04:41.627 (27580): Dropping connection
+2018-12-28 17:04:41.627 (27580): Closing server at: tab.pipe://./pipe/{81E11789-3FDC-45EB-8F2C-80BD74F27390}
+2018-12-28 17:15:04.042 (18180): pid=12112----------------------------------
+2018-12-28 17:15:04.042 (18180): Creating a connection to tde server
+2018-12-28 17:15:04.042 (18180): Starting new server instance
+2018-12-28 17:15:04.043 (18180): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:15:04.043 (18180): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:15:04.897 (18180): Opening connection to tab.pipe://./pipe/{C410B3C0-55D7-49BB-8AF8-4406AF01A482}
+2018-12-28 17:15:04.897 (18180): Creating new connection: tab.pipe://./pipe/{C410B3C0-55D7-49BB-8AF8-4406AF01A482}
+2018-12-28 17:15:04.898 (18180): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:15:05.287 (18180): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:15:05.576 (18180): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:15:05.782 (18180): Dropping connection
+2018-12-28 17:15:05.782 (18180): Closing server at: tab.pipe://./pipe/{C410B3C0-55D7-49BB-8AF8-4406AF01A482}
+2018-12-28 17:18:23.472 (27896): pid=12112----------------------------------
+2018-12-28 17:18:23.473 (27896): Creating a connection to tde server
+2018-12-28 17:18:23.473 (27896): Starting new server instance
+2018-12-28 17:18:23.474 (27896): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:18:23.474 (27896): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:18:23.754 (27896): Opening connection to tab.pipe://./pipe/{1935F574-0025-4354-B4D3-4582DDDFB41D}
+2018-12-28 17:18:23.754 (27896): Creating new connection: tab.pipe://./pipe/{1935F574-0025-4354-B4D3-4582DDDFB41D}
+2018-12-28 17:18:23.755 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:18:24.274 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:18:24.478 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:18:24.650 (27896): Dropping connection
+2018-12-28 17:18:24.650 (27896): Closing server at: tab.pipe://./pipe/{1935F574-0025-4354-B4D3-4582DDDFB41D}
+2018-12-28 17:23:20.437 (25720): pid=12112----------------------------------
+2018-12-28 17:23:20.438 (25720): Creating a connection to tde server
+2018-12-28 17:23:20.438 (25720): Starting new server instance
+2018-12-28 17:23:20.439 (25720): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:23:20.439 (25720): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:23:20.926 (25720): Opening connection to tab.pipe://./pipe/{B895214B-930D-4962-938B-8251280F6B3F}
+2018-12-28 17:23:20.926 (25720): Creating new connection: tab.pipe://./pipe/{B895214B-930D-4962-938B-8251280F6B3F}
+2018-12-28 17:23:20.929 (25720): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:23:21.374 (25720): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:23:21.599 (25720): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:23:21.827 (25720): Dropping connection
+2018-12-28 17:23:21.827 (25720): Closing server at: tab.pipe://./pipe/{B895214B-930D-4962-938B-8251280F6B3F}
+2018-12-28 17:25:25.930 (28640): pid=12112----------------------------------
+2018-12-28 17:25:25.930 (28640): Creating a connection to tde server
+2018-12-28 17:25:25.930 (28640): Starting new server instance
+2018-12-28 17:25:25.931 (28640): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:25:25.931 (28640): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:25:26.410 (28640): Opening connection to tab.pipe://./pipe/{6CD9FD64-26AE-4FAD-8BD4-4D39D455891A}
+2018-12-28 17:25:26.410 (28640): Creating new connection: tab.pipe://./pipe/{6CD9FD64-26AE-4FAD-8BD4-4D39D455891A}
+2018-12-28 17:25:26.415 (28640): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:25:26.856 (28640): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:25:27.151 (28640): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:25:27.403 (28640): Dropping connection
+2018-12-28 17:25:27.404 (28640): Closing server at: tab.pipe://./pipe/{6CD9FD64-26AE-4FAD-8BD4-4D39D455891A}
+2018-12-28 17:38:57.684 (27896): pid=12112----------------------------------
+2018-12-28 17:38:57.684 (27896): Creating a connection to tde server
+2018-12-28 17:38:57.684 (27896): Starting new server instance
+2018-12-28 17:38:57.686 (27896): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:38:57.686 (27896): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:38:58.154 (27896): Opening connection to tab.pipe://./pipe/{6DD26148-7A9B-4432-9DB8-D1DE5F056D02}
+2018-12-28 17:38:58.154 (27896): Creating new connection: tab.pipe://./pipe/{6DD26148-7A9B-4432-9DB8-D1DE5F056D02}
+2018-12-28 17:38:58.156 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:38:58.575 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:38:58.788 (27896): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:38:58.948 (27896): Dropping connection
+2018-12-28 17:38:58.948 (27896): Closing server at: tab.pipe://./pipe/{6DD26148-7A9B-4432-9DB8-D1DE5F056D02}
+2018-12-28 17:47:32.394 (29340): pid=21348----------------------------------
+2018-12-28 17:47:32.406 (29340): Creating a connection to tde server
+2018-12-28 17:47:32.406 (29340): Starting new server instance
+2018-12-28 17:47:32.408 (29340): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:47:32.408 (29340): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:47:34.179 (29340): Opening connection to tab.pipe://./pipe/{32649179-0D56-40C0-AC67-FAD8E6535C7A}
+2018-12-28 17:47:34.179 (29340): Creating new connection: tab.pipe://./pipe/{32649179-0D56-40C0-AC67-FAD8E6535C7A}
+2018-12-28 17:47:34.183 (29340): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:47:34.770 (29340): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:47:34.980 (29340): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:47:35.114 (29340): Dropping connection
+2018-12-28 17:47:35.114 (29340): Closing server at: tab.pipe://./pipe/{32649179-0D56-40C0-AC67-FAD8E6535C7A}
+2018-12-28 17:51:32.235 (28828): pid=21220----------------------------------
+2018-12-28 17:51:32.250 (28828): Creating a connection to tde server
+2018-12-28 17:51:32.250 (28828): Starting new server instance
+2018-12-28 17:51:32.251 (28828): DataEngine log file will be written to "DataExtract.log"
+2018-12-28 17:51:32.251 (28828): Launching tdeserver at "C:\\Users\\lenovo\\Desktop\\Tableau-SDK-C-Java-64Bit-10-3-16\\bin\\tdeserver64.exe"
+2018-12-28 17:51:32.659 (28828): Opening connection to tab.pipe://./pipe/{09E8B80B-DD54-4449-B7AE-13B3A5156A6A}
+2018-12-28 17:51:32.659 (28828): Creating new connection: tab.pipe://./pipe/{09E8B80B-DD54-4449-B7AE-13B3A5156A6A}
+2018-12-28 17:51:32.661 (28828): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:51:33.224 (28828): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:51:33.478 (28828): Connecting to existing database at "D:\\tde\\TableAuFile2018-12-28testTableau.tde"
+2018-12-28 17:51:33.617 (28828): Dropping connection
+2018-12-28 17:51:33.617 (28828): Closing server at: tab.pipe://./pipe/{09E8B80B-DD54-4449-B7AE-13B3A5156A6A}

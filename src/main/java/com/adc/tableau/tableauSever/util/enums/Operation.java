@@ -1,0 +1,55 @@
+package com.adc.tableau.tableauSever.util.enums;
+
+import com.adc.tableau.tableauSever.entity.RestAPIConfigType;
+import com.adc.tableau.tableauSever.util.context.SpringContextHolder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.context.support.StaticWebApplicationContext;
+
+import javax.ws.rs.core.UriBuilder;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+public enum Operation {
+
+    ADD_WORKBOOK_PERMISSIONS(getApiUriBuilder().path("sites/{siteId}/workbooks/{workbookId}/permissions")),
+    APPEND_FILE_UPLOAD(getApiUriBuilder().path("sites/{siteId}/fileUploads/{uploadSessionId}")),
+    CREATE_GROUP(getApiUriBuilder().path("sites/{siteId}/groups")),
+    INITIATE_FILE_UPLOAD(getApiUriBuilder().path("sites/{siteId}/fileUploads")),
+    PUBLISH_WORKBOOK(getApiUriBuilder().path("sites/{siteId}/workbooks")),
+    PUBLISH_DATA_SOURCE(getApiUriBuilder().path("/sites/{siteId}/datasources")),
+    DEl_DATA_SOURCE(getApiUriBuilder().path("/sites/{siteId}/datasources/{datasourceId}")),
+    QUERY_PROJECTS(getApiUriBuilder().path("sites/{siteId}/projects")),
+    QUERY_DATA_SOURCE(getApiUriBuilder().path("sites/{siteId}/datasources/")),
+    QUERY_SITES(getApiUriBuilder().path("sites")),
+    QUERY_WORKBOOKS(getApiUriBuilder().path("sites/{siteId}/users/{userId}/workbooks")),
+    SIGN_IN(getApiUriBuilder().path("auth/signin")),
+    SIGN_OUT(getApiUriBuilder().path("auth/signout"));
+
+
+
+    private final UriBuilder m_builder;
+
+    Operation(UriBuilder builder) {
+        m_builder = builder;
+    }
+
+    public UriBuilder getUriBuilder() {
+        return m_builder;
+    }
+
+    public String getUrl(Object... values) {
+        return m_builder.build(values).toString();
+    }
+    /**
+     * Creates an instance of UriBuilder, using the URL of the server specified
+     * in the configuration file.
+     *
+     * @return the URI builder
+     */
+    private static UriBuilder getApiUriBuilder() {
+        RestAPIConfigType restAPIConfigType= SpringContextHolder.getBean("restAPIConfigType");
+        return UriBuilder.fromPath(restAPIConfigType.getHost() + "/api/3.2");
+    }
+}

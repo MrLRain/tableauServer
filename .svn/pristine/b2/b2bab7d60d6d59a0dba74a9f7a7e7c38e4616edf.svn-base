@@ -1,0 +1,24 @@
+package com.adc.tableau.tableauSever.util;
+
+import com.mongodb.DBObject;
+import org.bson.Document;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+/**
+ * 和mongo交互的类
+ */
+@Repository
+public class MongoTemplateUtils {
+
+    @Autowired
+    org.springframework.data.mongodb.core.MongoTemplate mongoTemplate;
+
+    public List<Document> findAll(String collectionName){
+        List<Document> dbObjects = mongoTemplate.find(new Query(), Document.class, collectionName);
+        return dbObjects;
+    }
+}

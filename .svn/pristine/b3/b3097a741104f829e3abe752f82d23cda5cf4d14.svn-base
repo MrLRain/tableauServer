@@ -1,0 +1,177 @@
+package com.adc.tableau.tableauSever.util.tableau;
+
+import com.adc.tableau.tableauSever.entity.TableauConfigType;
+import com.adc.tableau.tableauSever.util.context.SpringContextHolder;
+import com.adc.tableau.tableauSever.util.enums.FieldTypeEnum;
+import com.tableausoftware.TableauException;
+import com.tableausoftware.common.Type;
+import com.tableausoftware.extract.*;
+import org.bson.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.File;
+import java.sql.PreparedStatement;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+
+public class SdkUtil {
+    protected static Logger logger = LoggerFactory.getLogger(SdkUtil.class);
+    private static TableauConfigType tableauConfigType = SpringContextHolder.getBean("tableauConfigType");
+    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+    private static Calendar cal = Calendar.getInstance();
+
+    /**
+     * ------------------------------------------------------------------------
+     * 该类用于创建TDE文件中的列
+     * -----------------------------------------------------------------------
+     *
+     * @throws Exception
+     */
+    private static TableDefinition makeTableDefinition(Map<String, Integer> fieldMsg) throws Exception {
+        TableDefinition tableDef = new TableDefinition();
+        fieldMsg.forEach((key, value) -> {
+            try {
+                tableDef.addColumn(key, Type.valueOf(FieldTypeEnum.tansformInt(
+                        value).getParamDec()));
+            } catch (TableauException e) {
+                e.printStackTrace();
+            }
+        });
+
+        return tableDef;
+    }
+
+    /**
+     * ------------------------------------------------------------------------
+     * 插入数据
+     * -----------------------------------------------------------------------
+     *
+     * @throws Exception
+     */
+    private static void insertData(Table table, String tableName, Map<String, String> fieldNames, List<Document> results) throws Exception {
+        PreparedStatement ps = null;
+        try {
+            TableDefinition tableDef = table.getTableDefinition();
+            int countColumn = tableDef.getColumnCount();
+            if (countColumn == 0) return;
+            results.forEach(result -> {
+                try {
+                    Row row = new Row(tableDef);
+                    for (int i = 0; i < countColumn; i++) {
+                        Object val = result.get(fieldNames.get(tableDef.getColumnName(i)));
+                        if (val != null) {
+                            if ("INTEGER".equals(tableDef.getColumnType(i).toString())) {
+                                row.setInteger(i, (Integer) val);
+                            } else if ("DOUBLE".equals(tableDef.getColumnType(i).toString())) {
+                                row.setDouble(i, (Double) val);
+                            } else if ("BOOLEAN".equals(tableDef.getColumnType(i).toString())) {
+                                row.setBoolean(i, (Boolean) val);
+                            } else if ("UNICODE_STRING".equals(tableDef.getColumnType(i).toString())) {
+                                row.setString(i, val.toString());
+                            } else if ("DATE".equals(tableDef.getColumnType(i).toString())) {
+                                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+                                Calendar cal = Calendar.getInstance();
+                                cal.setTime((Date) val);
+                                row.setDate(i, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH) + 1, cal.get(Calendar.DAY_OF_MONTH));
+                            }
+                        }
+                    }
+                    table.insert(row);
+                } catch (TableauException e) {
+                    e.printStackTrace();
+                }
+            });
+
+
+        } finally {
+            logger.info("插入数据完成");
+        }
+    }
+
+/*
+        @Test
+    public void c() throws Exception {
+        createFile("test");
+    }
+*/
+
+    /**
+     * ------------------------------------------------------------------------
+     * 生成文件的主方法
+     * 文件保存路径在:<项目路径>\WebRoot\TableAuFile
+     * 文件名格式: 2016517TableName.tde
+     * -----------------------------------------------------------------------
+     *
+     * @throws Exception
+     */
+    public static String createFile(String tableName,
+                                    Map<String, Integer> fieldMsg,
+                                    Map<String, String> fieldNames,
+                                    String dataSourceName,
+                                    List<Document> results
+    ) {
+        String sysName = System.getProperty("os.name").toUpperCase();
+        String relativelyPath = tableauConfigType.getgFileUrl();
+        File file = null;
+        String url = null;
+        String fileName = format.format(new Date()) + dataSourceName + ".tde";
+        try {
+            //  Initialize the Tableau Extract API
+            com.sun.jna.NativeLibrary.addSearchPath("TableauExtract", tableauConfigType.getJnaUrl());
+            ExtractAPI.initialize();
+            if (sysName.contains("WINDOW")) {
+                url = relativelyPath + "\\TableAuFile";
+                file = new File(url + fileName);
+                if (file.exists()) {
+                    file.deleteOnExit();
+                }
+                /**Extract为必须的,不可设置其他替代字符*/
+                try (Extract extract = new Extract(url + fileName)) {
+                    Table table;
+                    if (!extract.hasTable("Extract")) {
+                        TableDefinition tableDef = makeTableDefinition(fieldMsg);
+                        table = extract.addTable("Extract", tableDef);
+                    } else {
+                        table = extract.openTable("Extract");
+                    }
+                    insertData(table, tableName, fieldNames, results);
+                }
+            } else {
+                //usr/local/tomcat/bin
+                url = relativelyPath + "/TableAuFile";
+                file = new File(url + "/" + fileName);
+                if (file.exists()) {
+                    file.delete();
+                }
+                //                //  Initialize the Tableau Extract API
+                com.sun.jna.NativeLibrary.addSearchPath("TableauExtract", tableauConfigType.getJnaUrl());
+//                //  Initialize the Tableau Extract API
+                ExtractAPI.initialize();
+                /**Extract为必须的,不可设置其他替代字符*/
+                try (Extract extract = new Extract(url + fileName)) {
+                    Table table;
+                    if (!extract.hasTable("Extract")) {
+                        TableDefinition tableDef = makeTableDefinition(fieldMsg);
+                        table = extract.addTable("Extract", tableDef);
+                    } else {
+                        table = extract.openTable("Extract");
+                    }
+                    insertData(table, tableName, fieldNames, results);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                ExtractAPI.cleanup();
+            } catch (TableauException e) {
+                e.printStackTrace();
+            }
+        }
+        return url + fileName;
+    }
+}
